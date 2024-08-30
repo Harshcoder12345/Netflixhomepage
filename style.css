@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+position: relative;
+
+}
+
+
+img{
+    height: 120px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    
+}
+
+.button{
+    padding: 30px;
+    gap: 15px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 130px;
+    font-family:"Poppins", sans-serif;
+    text-align: center;
+    gap: 20px;
+    color: white;
+}
+.bg-img{
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%),url(/assets/background_img.jpg);;
+    /* background-image:  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+
+}
+
+
+.hero-section h1{
+    font-size: 60px;
+    width: 50%;
+}
+
+.btn-1{
+    color: white;
+    padding: 7px;
+    font-family:"Poppins", sans-serif ;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    border: 1px solid rgba(93, 84, 84, 2);
+    margin-right: .6rem;
+    font-size: 1rem;
+
+}
+
+.btn-2{
+background-color: red;
+color: white;
+font-family: "Poppins", sans-serif;
+padding: 7px;
+border: none;
+width: 100px;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+.btn-3{
+    background-color: red;
+color: white;
+font-family: "Poppins", sans-serif;
+width: 150px;
+border-radius: 5px;
+height: 3rem;
+font-size: 20px;
+border: none;
+}
+
+form{
+    width: 50%;
+}
+form input {
+    background-color: #171616;
+    border: none;
+    border: 1px solid rgba(93, 84, 84, 2);
+    height: 3rem;
+    width: 25rem;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: aliceblue;
+    padding: 15px;
+}
+
+.trending{
+    background-color: black;
+    /* height: 100vh; */
+    padding: 20px 100px;
+    position: relative;
+    margin: 5px;
+}
+
+ .trending::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    
+}
+
+.trendbox{
+margin: 20px;
+}
+
+.trendbox h2{
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.trendbtn {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  
+}
+.btn-India{
+    margin-right: 10px;
+}
+.trendbtn button{
+    padding: 10px;
+    width: 100px;
+    background-color: #171616;
+    border: 1px solid rgba(93, 84, 84, 2);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.trendcards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardbox{
+    width: 200px;
+    height: 280px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-size: contain;
+    position: relative;
+}
+
+.num{
+    position: absolute;
+    bottom: 10px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 100px;
+    z-index: 1;
+    font-weight: 600;
+    text-shadow: 2px 2px white;
+
+}
+
+
+.trendcards{
+    transition: all 0.3s;
+}
+
+.cardbox:hover{
+    transform: scale(110%);
+    
+}
+
+.trendcards .cardbox:first-child{
+    background-image: url(/assets/image_1.webp);
+    
+}
+.trendcards .cardbox:nth-child(2){
+    background-image: url(/assets/image_2.webp);
+}
+.trendcards .cardbox:nth-child(3){
+    background-image: url(/assets/image_3.webp);
+}
+.trendcards .cardbox:nth-child(4){
+    background-image: url(/assets/image_4.webp);
+}
+.trendcards .cardbox:last-child{
+    background-image: url(/assets/image_5.webp);
+}
+
+.detail{
+    padding: 20px 100px;
+    color: white;
+}
+
+.detail h2 {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif ;
+}
+.carddet{
+    background-color: aliceblue;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+
+}
+.carddet1  {
+    margin: 10px;
+}
+.carddet1 h3 {
+    margin-bottom: 10px;
+}
+.carddet svg{
+    margin-left: 160px;
+
+}
+.carddets{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+/* Used website UI Gradients */
+.carddet{
+    background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.faq{
+   padding: 20px 120px;
+   color: #2d2d2d;
+
+}
+.faq ul:hover{
+    background-color: #422f2f;
+}
+.faq h2{
+   color: white;
+   margin-bottom: 10px;
+
+}
+
+.ul ul{
+    display: flex;
+    color:  #fafafa;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    background-color: grey;
+    height: 70px;
+    font-size: 30px;
+    margin-bottom: 10px;    
+}
+
+.faqfotter{
+    padding: 20px 120px;
+}
+.faqfotter h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #b3b3b3;
+}
+.ulfotter{
+    display: flex;
+    gap: 120px;
+    color: #b3b3b3;
+    
+}
+
+.ulfotter ul{
+    list-style: none;
+}
+.ulfotter ul li{
+    margin: 10px;
+}
+
+.below{
+    padding: 20px 120px;
+
+}
+
+.below-text{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.chat-box{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    height: 130px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box ::placeholder{
+    color: black;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.chat-icon ul li{
+list-style: none;
+padding: 10px;
+height: 20px;
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.ask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
